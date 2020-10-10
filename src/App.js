@@ -22,6 +22,9 @@ class App extends React.Component {
                     quote: newQuote['quote'],
                     author: newQuote['author'],
                 });
+            })
+            .catch((error) => {
+                console.log(error);
             });
     }
 
