@@ -30,8 +30,23 @@ class App extends React.Component {
     }
 
     render() {
+        const colorArray = [
+            '#3d0707',
+            '#b84f0f',
+            '#45470b',
+            '#11470b',
+            '#0f403a',
+            '#0f1f33',
+            '#410e47',
+            '#470e2d',
+        ];
+
+        const randomBackgroundColor = {
+            backgroundColor: colorArray[Math.floor(Math.random() * 8)],
+        };
+
         return (
-            <div className='container'>
+            <div className='container' style={randomBackgroundColor}>
                 <div id='quote-box'>
                     <div id='text'>
                         <i
