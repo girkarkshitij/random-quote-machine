@@ -33,7 +33,13 @@ class App extends React.Component {
         return (
             <div className='container'>
                 <div id='quote-box'>
-                    <div id='text'>{this.state.quote}</div>
+                    <div id='text'>
+                        <i
+                            className='fa fa-quote-left fa-2x'
+                            aria-hidden='true'
+                        ></i>
+                        {this.state.quote}
+                    </div>
                     <div id='author'>{this.state.author}</div>
                     <a href='twitter.com/intent/tweet' id='tweet-quote'>
                         Tweet Quote

@@ -14,8 +14,8 @@ body {
 
 .container {
     background-color: yellow;
-    height: 300px;
-    width: 800px;
+    height: 400px;
+    width: 900px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -26,12 +26,29 @@ body {
 
 #quote-box {
     background-color: red;
-    height: 200px;
-    width: 700px;
+    height: 300px;
+    width: 800px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+    padding: 20px;
+}
+
+.fa-quote-left {
+    margin: 20px;
+}
+
+#text {
+    height: 150px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#author {
+    padding: 20px;
+    text-align: center;
 }
