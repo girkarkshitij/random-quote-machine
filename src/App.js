@@ -57,15 +57,17 @@ class App extends React.Component {
                         {this.state.quote}
                     </div>
                     <div id='author'>{this.state.author}</div>
-                    <a href='twitter.com/intent/tweet' id='tweet-quote'>
-                        <i
-                            className='fa fa-twitter fa-2x'
-                            aria-hidden='true'
-                        ></i>
-                    </a>
-                    <button id='new-quote' onClick={this.fetchQuote}>
-                        New Quote
-                    </button>
+                    <div className='flex-container'>
+                        <a href='twitter.com/intent/tweet' id='tweet-quote'>
+                            <i
+                                className='fa fa-twitter fa-2x'
+                                aria-hidden='true'
+                            ></i>
+                        </a>
+                        <button id='new-quote' onClick={this.fetchQuote}>
+                            New Quote
+                        </button>
+                    </div>
                 </div>
             </div>
         );
