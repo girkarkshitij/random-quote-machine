@@ -43,6 +43,7 @@ class App extends React.Component {
 
         const randomBackgroundColor = {
             backgroundColor: colorArray[Math.floor(Math.random() * 8)],
+            color: colorArray[Math.floor(Math.random() * 8)],
         };
 
         return (
@@ -57,7 +58,10 @@ class App extends React.Component {
                     </div>
                     <div id='author'>{this.state.author}</div>
                     <a href='twitter.com/intent/tweet' id='tweet-quote'>
-                        Tweet Quote
+                        <i
+                            className='fa fa-twitter fa-2x'
+                            aria-hidden='true'
+                        ></i>
                     </a>
                     <button id='new-quote' onClick={this.fetchQuote}>
                         New Quote
